@@ -1,5 +1,4 @@
 package com.Arbetsformedlingen.utilities;
-
 import java.io.FileInputStream;
 import java.util.Properties;
 

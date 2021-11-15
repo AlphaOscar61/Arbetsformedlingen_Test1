@@ -2,17 +2,17 @@ $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.
 formatter.feature({
   "name": "Changing any information",
   "description": "",
-  "keyword": "Feature"
-});
-formatter.scenario({
-  "name": "Verify that user change personal information",
-  "description": "",
-  "keyword": "Scenario",
+  "keyword": "Feature",
   "tags": [
     {
-      "name": "@test1"
+      "name": "@wip"
     }
   ]
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
 });
 formatter.before({
   "status": "passed"
@@ -77,6 +77,19 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.scenario({
+  "name": "Verify that user change personal information",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@wip"
+    },
+    {
+      "name": "@test1"
+    }
+  ]
+});
 formatter.step({
   "name": "the user click Redigera Uppgifter button",
   "keyword": "And "
@@ -115,10 +128,8 @@ formatter.match({
   "location": "com.Arbetsformedlingen.step_definitions.changingStepDef.the_user_monitors_new_information()"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: expected:\u003c0731111111\u003e but was:\u003cnull\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:120)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.Arbetsformedlingen.pages.MyPage.monitorNewValue(MyPage.java:45)\r\n\tat com.Arbetsformedlingen.step_definitions.changingStepDef.the_user_monitors_new_information(changingStepDef.java:62)\r\n\tat ✽.the user monitors new information(file:///C:/Users/a/IdeaProjects/arbetsformedlingen/src/test/resources/features/changingInformation.feature:13)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
-formatter.embedding("image/png", "embedded0.png", "screenshot");
 formatter.after({
   "status": "passed"
 });

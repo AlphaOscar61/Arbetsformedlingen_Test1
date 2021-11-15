@@ -1,5 +1,4 @@
 package com.Arbetsformedlingen.step_definitions;
-
 import com.Arbetsformedlingen.utilities.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
